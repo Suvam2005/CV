@@ -1,0 +1,116 @@
+.sidebar {
+    position: fixed;
+    top: 46%;
+    right: 4%;
+    width: auto;
+    height: auto;
+}
+.sidebar p{
+    color: white;
+    writing-mode: vertical-lr;
+}
+.line {
+    position: relative;
+    top: 2vh;
+}
+
+.line::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 1px;
+    height: 65px;
+    background-color: white;
+}
+.social{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 13vh;
+    border-radius: 50%;
+}
+.social i{
+    font-size: 15px;
+    color: white;
+    display: list-item;
+    list-style-type: none;
+}
+.social a{
+    text-decoration: none;
+}
+.social a::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    background-color: #4bffa5;
+    opacity: 20%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+.social a:hover::before {
+    transform: translate(50%, 50%) scale(20);
+}
+
+.in{
+    position: relative;
+    top: 1vh;
+}
+.git{
+    position: relative;
+    top: 6vh;
+}
+.insta{
+    position: relative;
+    top: 12vh;
+}
+.face{
+    position: relative;
+    top: 17vh;
+}
+@media (max-width: 768px) {
+    .sidebar{
+        position: fixed;
+        display: block;
+        z-index: 1;
+        top: 44vh;
+        right: 6%;
+    }
+    .sidebar p{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+    .in{
+        position: relative;
+        top: 5vh;
+
+    }
+    .git{
+        position: relative;
+        top: 9vh;
+    }
+    .insta{
+        position: relative;
+        top: 14vh;
+    }
+    .face{
+        position: relative;
+        top: 18vh;
+    }
+    .social i{
+        font-size: 18px;
+        color: white;
+        display: list-item;
+        list-style-type: none;
+    }
+    .social a::before{
+        display: none;
+    }
+}

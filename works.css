@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background: #0c0c0c;
+
+
+}
+.mail{
+    display: none;
+}
+.down-arrow{
+    display: none;
+}
+.span-1{
+    color: white !important;
+    display: block;
+    position: absolute;
+    left: 60px;
+    font-size: 18px !important;
+    top: 0.2vh !important;
+}
+.name-1{
+    display: none;
+}
+.name{
+    transform: translateY(0);
+    font-size: 18px;
+    width: 20%;
+    margin-left: 7px;
+    top: 1px;
+}
+
+.name2 {
+    transform: translateY(100%);
+    font-size: 18px;
+    position: absolute;
+    left: 18px !important;
+}
+input{
+    display: none;
+}
+navbar{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    position: fixed;
+    z-index: 1;
+    background: #0c0c0c;
+}
+navbar a{
+    text-decoration: none;
+    color: white;
+    
+}
+nav{
+    margin-right: 4%;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    position: fixed;
+    left: 1213px;
+    width: 100%;
+    top: 3vh;
+}
+ul{
+    overflow: hidden;
+}
+ul li{
+    display: inline-block;
+    margin: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.home:hover{
+    content: 'Home';
+}
+.Dropdown a::before {
+    content: '';
+    position: fixed;
+    top: 7vh;
+    right: 270px;
+    width: 4px;
+    height: 4px;
+    background-color: #4bffa5;
+    opacity: 20%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+.Dropdown a:hover::before {
+    transform: translate(50%, 50%) scale(20);
+}
+.Dropdown:hover .dropdown{
+    display: block;
+}
+.Dropdown2 a::before {
+    content: '';
+    position: fixed;
+    top: 7vh;
+    right: 181px;
+    width: 4px;
+    height: 4px;
+    background-color: #4bffa5;
+    opacity: 20%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+.Dropdown2 a:hover::before {
+    transform: translate(50%, 50%) scale(20);
+}
+.Dropdown2:hover .dropdown-second{
+    display: block;
+}
+.Dropdown3 a::before {
+    content: '';
+    position: fixed;
+    top: 7vh;
+    right: 90px;
+    width: 4px;
+    height: 4px;
+    background-color: #4bffa5;
+    opacity: 20%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+.Dropdown3 a:hover::before {
+    transform: translate(50%, 50%) scale(20);
+}
+.Dropdown3:hover .dropdown-third{
+    display: block;
+}
+.Dropdown3 a:visited{
+    color: #4bffa5;
+}
+h1{
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 14vh;
+    font-size: 45px;
+}
+.projects{
+    width: 100%;
+    height: 205vh;
+}
+.projects h2{
+    position: absolute;
+    top: 25vh;
+    left: 18%;
+    color: #929292;
+}
+.project1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30vh;
+}
+.iframe1{
+    position: absolute;
+    top: 5vh;
+    right: 57%;
+    height: 93vh;
+    width: 25%;
+}
+
+.iframe2{
+    position: absolute;
+    top: 5vh;
+    right: 20%;
+    height: 63vh;
+    width: 25%;
+}
+.project2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
+.iframe3{
+    position: absolute;
+    top: 85vh;
+    right: 20%;
+    height: 93vh;
+    width: 25%;
+}
+.iframe4{
+    position: absolute;
+    top: 115vh;
+    right: 57%;
+    height: 63vh;
+    width: 25%;
+}
+.extra{
+    height: 20vh;
+    width: auto;
+}
+
+@media (max-width:768px) and (max-width: 1024px) {
+    .containor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 27vh !important;
+        background: #0c0c0c;
+        z-index: -1;
+        width: 100%;
+        position: fixed;
+    }
+        input{
+        display: none;
+    }
+    label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        position: fixed;
+        transition: 1s;
+        left: 80%;
+        top: 5vh;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    label span{
+        background-color: white;
+        width: 30px;
+        height: 5px;
+        position: relative;
+        border-radius: 5px;
+        left: 2%;
+    }
+    label span:nth-child(2){
+        margin-top: 6px;
+    }
+    label span:nth-child(3){
+        margin-top: 6px;
+        transition: 1s;
+    }
+        input:checked ~ label span:nth-child(1){
+        transform: rotate(45deg);
+        position: relative;
+        top: 6px;
+        transition: 1s;
+    }
+    input:checked ~ label span:nth-child(2){
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 5px;
+        transition: 1s;
+    }
+    input:checked ~ label span:nth-child(3){
+        display: none;
+        
+    }
+    navbar{
+        width: auto;
+        height: auto;
+    }
+    .nav{
+        background: #0c0c0c;
+        position: fixed;
+        top: 0;
+        width: 60%;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: hidden;
+        max-width: 100%;
+        transform: translateX(-106%);
+    }
+        @keyframes open{
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .nav.show{
+        animation: open 1s ease-in-out forwards;
+    }
+    @keyframes close{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    .nav.notshow{
+        animation: close 1s ease-in-out;
+    }
+    .Dropdown{
+        background: transparent;
+        width: 87%;
+        position: relative;
+        height: 5vh;
+        left: -1%;
+        top: 4vh;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .Dropdown a{
+        text-decoration: none;
+        opacity: 100%;
+        color: gray;
+        position: relative;
+        top: 8px;
+    }
+    .Dropdown2{
+        background: transparent;
+        width: 87%;
+        position: relative;
+        height: 5vh;
+        left: -2%;
+        margin-top: 10vh;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .Dropdown2 a{
+        text-decoration: none;
+        opacity: 100%;
+        color: gray;
+        position: relative;
+        top: 8px;
+    }
+    .Dropdown3{
+        background: transparent;
+        width: 92%;
+        position: relative;
+        height: 5vh;
+        left: -4%;
+        margin-top: 6vh;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .Dropdown3 a{
+        text-decoration: none;
+        opacity: 100%;
+        color: gray;
+        position: relative;
+        top: 8px;
+        font-weight: 500;
+    }
+    .sidebar{
+        display: none !important;
+    }
+    h1{
+        position: absolute;
+        top: 38vh;
+        left: 30%;
+    }
+    .projects h2{
+        margin-left: 0;
+        position: absolute;
+        left: 15%;
+        top: 13vh;
+    }
+    .down-arrow{
+        display: block;
+    }
+    .down-arrow i{
+        color: #2fe19b;
+        position: absolute;
+        top: 80vh;
+        z-index: -1;
+        left: 47%;
+        font-size: 30px;
+        animation: up-down 1s ease-in-out infinite;
+    }
+    .down-arrow {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    .down-arrow.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @keyframes up-down{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(15px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    .menu{
+        position: relative;
+        top: 20vh;
+        left: 0;
+        z-index: 1;
+    }
+    .projects{
+        position: absolute;
+        top: 90vh;
+        width: 94%;
+        left: 4%;
+        height: 96vh;
+    }
+    .projects h2{
+        position: absolute;
+        left: 5%;
+        top: 15vh;
+    }
+    .project1{
+        width: 100%;
+        display: flex !important;
+        flex-basis: 100% !important;
+        flex-direction: column !important;
+        justify-items: center !important;
+        align-items: center !important;
+    }
+    .project1-1{
+        position: absolute;
+        top: -6vh;
+        left: 0;
+        width: 100%;
+    }
+    .project1-2{
+        position: absolute;
+        top: 16vh;
+        width: 100%;
+    }
+    .iframe1{
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+    .iframe2{
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 85vh;
+        height: 50vh;
+    }
+
+    .project2{
+        width: 100%;
+        display: flex !important;
+        flex-basis: 100% !important;
+        flex-direction: column !important;
+        justify-items: center !important;
+        align-items: center !important;
+    }
+    .project2-1{
+        position: absolute;
+        top: 16vh;
+        left: 0;
+        width: 100%;
+    }
+    .project2-2{
+        position: absolute;
+        top: 16vh;
+        width: 100%;
+    }
+    .iframe3{
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 155vh;
+        height: 50vh;
+    }
+    .iframe4{
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 215vh;
+        height: 85vh;
+    }
+    .text-containor{
+        position: fixed !important;
+        top: 7vh;
+        left: 2%;
+        z-index: 1;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .text-containor a{
+        font-size: 17px;
+        position: absolute;
+        left: 15%;
+    }
+    .span_change{
+        font-size: 18px !important;
+        position: fixed;
+        left: -70%;
+    }
+    .name{
+        position: absolute;
+        left: 50%;
+    }
+    .span-1{
+        display: none;
+    }
+    .name2{
+        display: none;
+    }
+    .name-1{
+        display: block;
+        position: absolute !important;
+        left: 50% !important;
+        top: 0vh !important;
+    }
+    .span_change2{
+        font-size: 17px !important;
+        color: white !important;
+        position: absolute !important;
+        top: 2px !important;
+        left: -4px !important;
+    }
+    .Dropdown a::before {
+        display: none;
+    }
+    .Dropdown2 a::before {
+        display: none;
+    }
+        .Dropdown a::before{
+        display: none;
+    }
+    .Dropdown2 a::before{
+        display: none;
+    }
+    .Dropdown3 a::before{
+        display: none;
+    }
+    .mail{
+        display: block;
+        position: absolute;
+        top: 350vh;
+        left: 8%;
+        text-align: center;
+    }
+    .mail p{
+        color: #a4aeb5;
+        font-size: 15px;
+    }
+    .projects h2{
+        margin-left: 0.5%;
+        margin-top: 2vh;
+    }
+    .sidebar{
+        display: block !important;
+        position: absolute !important;
+        top:425vh !important;
+        height: 29vh !important;
+    }
+    .social{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        right: 170%;
+    }
+    .social i{
+        color: #a4aeb5 !important;
+    }
+    .in{
+        top: 10vh !important;
+        left: -140%;
+    }
+    .git{
+        top: 10vh !important;
+        left: -70%;
+    }
+    .insta{
+        top: 10vh !important;
+        left: 18%;
+    }
+    .face{
+        top: 10vh !important;
+        left: 100% !important;
+    }
+
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .containor{
+        height: 45vh !important;
+    }
+    .typing-container{
+        display: none;
+    }
+    .name2{
+        display: none;
+    }
+    .text-containor{
+        width: 175px !important;
+        margin-top: 4vh !important;
+    }
+    .name{
+        font-weight: 600;
+        z-index: 1;
+    }
+    .down-arrow i{
+        left: 80%;
+        top: 70vh;
+    }
+    .label1{
+        top: 8vh;
+        left: 86% !important;
+    }
+    .Dropdown{
+        top: -3vh !important;
+        width: 100%;
+        left: -4% !important;
+    }
+    .Dropdown2{
+        margin-top: 5vh !important;
+        width: 100%;
+        left: -4% !important;
+    }
+    .Dropdown3{
+        margin-top: 9vh;
+        width: 100%;
+        left: -4% !important;
+    }
+    .Dropdown a{
+        top: -2px !important;
+    }
+    .Dropdown2 a{
+        top: -2px !important;
+        left: 1%;
+    }
+    .Dropdown3 a{
+        top: -2px !important;
+    }
+    .h1{
+        left: 40%;
+    }
+    .projects h2{
+        font-size: 20px;
+        color: white;
+        margin-left: -1.5%;
+    }
+    .project1{
+        margin-top: 7vh;
+    }
+    .iframe1{
+        width: 48%;
+        margin-left: -1.5%;
+        height: 152vh;
+    }
+    .iframe2{
+        width: 48%;
+        left: 52.5%;
+        top: -17vh;
+        height: 90vh;
+    }
+    .iframe3{
+        width: 48%;
+        left: 52.5%;
+        height: 152vh;
+        top: 100vh;
+    }
+    .iframe4{
+        width: 48%;
+        height: 90vh;
+        margin-left: -1.5%;
+        top: 162vh;
+    }
+    .sidebar{
+        display: block !important;
+        position: absolute !important;
+        top:410vh !important;
+        height: 40vh !important;
+    }
+    .social{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        right: 260px;
+    }
+    .social i{
+        color: #a4aeb5 !important;
+    }
+    .in{
+        top: 10vh !important;
+        left: -140%;
+    }
+    .git{
+        top: 10vh !important;
+        left: -70%;
+    }
+    .insta{
+        top: 10vh !important;
+        left: 18%;
+    }
+    .face{
+        top: 10vh !important;
+        left: 100%;
+    }
+    .mail{
+        display: block;
+        position: absolute;
+        top: 325vh;
+        left: 30%;
+        text-align: center;
+    }
+    .mail p{
+        color: #a4aeb5;
+    }
+    .name-1{
+        left: 47% !important;
+        top: -0.2vh;
+    }
+}

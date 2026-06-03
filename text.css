@@ -1,0 +1,34 @@
+.text-containor span{
+    color: #a4a7a9;
+    font-size: 20px;
+    margin-left: 9px;
+}
+.text-containor {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 20px;
+    width: 150px;
+    border:none;
+    text-align: center;
+}
+.name, .name2 {
+    position: absolute;
+    left: 16px;
+    right: 0;
+    transition: transform 0.5s ease;
+}
+.name{
+    transform: translateY(0);
+    font-size: 18px;
+}
+.name2 {
+    transform: translateY(100%);
+    font-size: 18px;
+}
+.text-containor:hover .name {
+    transform: translateY(-100%);
+}
+.text-containor:hover .name2 {
+    transform: translateY(0);
+}
